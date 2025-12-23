@@ -342,7 +342,7 @@ ul {
 .code_paper {
     font-family: "Lato";
     font-size: 12px;
-    margin: 0em 1.2em 0em;
+    margin: 0 -.5em 0;
     color: #A9A9A9;
 }
 
@@ -354,7 +354,7 @@ ul {
 }
 
 .project_description {
- margin: .5em .9em 0em;
+ margin: .5em -.5em 0em;
 }
 
 .section .section-header {
@@ -517,6 +517,10 @@ ul {
 
 .tab-content.active {
   display: block !important;
+}
+
+.tab-content ul {
+  list-style: none;
 }
 
 @keyframes fadeIn {
