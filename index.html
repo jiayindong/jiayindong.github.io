@@ -23,165 +23,198 @@
 <meta name="twitter:description" content=""/>
 <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:500,100,300" rel="stylesheet">
 
-	<link rel="stylesheet" type="text/css" media="screen" href=https://jiayindong.github.io/css/normalize.css />
-	<link rel="stylesheet" type="text/css" media="screen" href=https://jiayindong.github.io/css/main.css />
+	<link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
 
-	<script src=https://jiayindong.github.io/js/feather.min.js></script><script src=https://jiayindong.github.io/js/main.js></script>
+	<script src="js/feather.min.js"></script><script src="js/main.js"></script>
 </head>
 
 
 	<body>
 		<div class="container wrapper">
 			<div class="header">
-	<img src=https://jiayindong.github.io/profile.jpg class="profile_image">
-	<h1 class="site-title">Jiayin Dong</h1>
-	<div class="site-affilation">
-		<span class="affilation"><ul class="flat">
-				<li class="position">Assistant Professor of Astronomy</li>
-				<li class="email">jdongx@illinois.edu</li>
-			</ul></span>
-		
+				<img src=https://jiayindong.github.io/profile.jpg class="profile_image">
+				<h1 class="site-title">Jiayin Dong</h1>
+				<div class="site-affilation">
+					<span class="affilation">
+						<ul class="flat">
+							<li class="position">Assistant Professor of Astronomy</li>
+							<li class="email">jdongx@illinois.edu</li>
+						</ul>
+					</span>
 
-		<nav class="nav social">
-			<ul class="flat"><a href="https://github.com/jiayindong" title="GitHub"><i data-feather="github"></i></a><a href="https://twitter.com/jiayin_dong" title="Twitter"><i data-feather="twitter"></i></a>
-				|
-				<a href="JiayinDong_CV.pdf" class="blog_cv">[cv]</a>
-				
-				
-			</ul>
+					<nav class="nav social">
+						<ul class="flat">
+							<a href="https://github.com/jiayindong" title="GitHub"><i data-feather="github"></i></a>
+							<a href="https://twitter.com/jiayin_dong" title="Twitter"><i data-feather="twitter"></i></a>
+							|
+							<a href="JiayinDong_CV.pdf" class="blog_cv">[cv]</a>
+						</ul>
+					</nav>
+				</div>
+
+				<nav class="nav">
+					<ul class="flat">
+						
+					</ul>
+				</nav>
+			</div>
+
+			<div class="introduction">
+				<span>
+					I am an Assistant Professor of Astronomy at the University of Illinois Urbana-Champaign. My research integrates computational and statistical methods with observations to study the formation and evolution of planetary systems. I received my PhD in Astronomy and Astrophysics from Penn State University and was a Flatiron Research Fellow at the Center for Computational Astrophysics at the Flatiron Institute.
+				</span>
+			</div>
+
+			<!-- Tab Navigation -->
+			<div class="tabs">
+				<button class="tab-button active" onclick="openTab(event, 'projects')">Research</button>
+				<button class="tab-button" onclick="openTab(event, 'teaching')">Teaching</button>
+				<button class="tab-button" onclick="openTab(event, 'group')">Group</button>
+			</div>
+
+			<!-- Tab Content -->
+			<div id="projects" class="tab-content active">
+				<div class="introduction">
+									<ul display:table-row;>
+						<li>
+							<a href="Dong_Gordon.pdf" class="project"> Stellar Obliquity Distribution of Hot Jupiters</a>
+
+							<span class="code_paper">
+								<a href="https://ui.adsabs.harvard.edu/abs/2023arXiv230514220D/abstract" class="paper_link_color">Dong &amp; Foreman-Mackey 2023, AJ, 166, 112</a>
+							</span>
+							
+							<span class="project_description">
+								Stellar obliquity, the angle between a planet's orbital axis and its host star's spin axis, serves as a probe of a planetary system's formation and dynamical history. Different high-e migration scenarios for Hot Jupiters predict different stellar obliquity distributions. In this population study, we found that the misaligned Hot Jupiter population follows a nearly isotropic distribution. This suggests that planet-planet interactions could be the primary channel for the formation of Hot Jupiters. We also introduce this <a href="https://github.com/jiayindong/obliquity">population-level obliquity inference code</a> that models the spin-orbit angle distribution of exoplanetary systems using a hierarchical Bayesian framework.
+							</span>
+						</li>
+
+						<li>
+							<a href="JiayinDong_DDA22.pdf" class="project"> Eccentricity Distribution of TESS Warm Jupiters </a>
+
+							<span class="code_paper">
+								<a href="https://ui.adsabs.harvard.edu/abs/2021arXiv210401970D/abstract" class="paper_link_color">Dong, Huang, Dawson et al. 2021, ApJS, 255, 6</a>
+								<br>
+								<a href="https://ui.adsabs.harvard.edu/abs/2021arXiv210903771D/abstract" class="paper_link_color">Dong, Huang, Zhou et al. 2021, ApJL, 920, L16</a>
+								<br>
+							</span>
+							
+							<span class="project_description">
+								The formation process of Warm Jupiters remains unclear. They may form in situ, undergo disk or high eccentricity tidal migration, or be formed through a combination of these channels. Each of these origin theories leads to different expectations for the eccentricities of Warm Jupiters. We have been systematically searching for Warm Jupiters in the TESS Full-Frame Images and conducting follow-up observations.
+
+								As a result of our research, we have introduced a catalog of Warm Jupiter candidates identified from the first year of TESS data. These Warm Jupiters have been validated and characterized based on their transit-timing variations and eccentricities. We have inferred their <a href="https://ui.adsabs.harvard.edu/abs/2021arXiv210401970D/abstract">eccentricity distribution</a> using hierarchical Bayesian modeling and found a broad and possibly bimodal eccentricity distribution of Warm Jupiters' orbits. This suggests Warm Jupiters, similar to Hot Jupiters, undergo planet-planet interactions.
+
+								Our survey led to the discovery of <a href="https://ui.adsabs.harvard.edu/abs/2021arXiv210903771D/abstract">TOI-3362b</a>, a Jupiter-like planet with the highest observed eccentricity among planets with orbital periods less than 20 days. It is likely undergoing high-eccentricity tidal migration.
+							</span>
+						</li>
+
+						<li>
+							<a href="" class="project"> Rossiter-McLaughlin Measurements of Close-In Planets </a>
+
+							<span class="code_paper">
+								<a href="https://ui.adsabs.harvard.edu/abs/2023arXiv230516495D/abstract" class="paper_link_color">Dong, Wang, Rice et al. 2023, ApJL, 951, L29 </a>
+								<br>
+								<a href="https://ui.adsabs.harvard.edu/abs/2022arXiv220112836D/abstract" class="paper_link_color">Dong, Huang, Zhou et al. 2022, ApJL, 920, L7</a>
+							</span>
+							
+							<span class="project_description">
+								Warm Jupiters are close-in giant planets with relatively large planet-star separations. Their stellar obliquities are less influenced by planet-star tidal interactions and, therefore, may serve as a probe of the planetary system's formation and dynamical history. However, the stellar obliquities of Warm Jupiters have not been extensively explored, particularly for those with highly elliptical orbits or those within young systems.
+
+								I have led the discovery and the Rossiter-McLaughlin effect measurements of two significant exoplanets. One of these is <a href="https://ui.adsabs.harvard.edu/abs/2022arXiv220112836D/abstract">TOI-1268b</a>, which is among the youngest known Warm Saturns. The other is <a href="https://ui.adsabs.harvard.edu/abs/2023arXiv230516495D/abstract">TOI-1859b</a>, a clear example of an eccentric and misaligned Warm giant planet and one of the first of its kind to be identified, in favor of planet-planet interaction origin.
+							</span>
+						</li>
+
+						<li>
+							<a href="Dong_DDA21_1slide.pdf" class="project"> Boundary Layer Circumplanetary Accretion</a>
+
+							<span class="code_paper">
+								<a href="https://ui.adsabs.harvard.edu/abs/2020arXiv201206641D/abstract" class="paper_link_color">Dong, Jiang, &amp; Armitage 2021, ApJ, 921, 54</a>
+							</span>
+							
+							<span class="project_description">
+								Gas giants are expected to accrete most of their mass via a circumplanetary disk. If the planet is unmagnetized and initially slowly rotating, it will accrete gas via a radially narrow boundary layer and rapidly spin up. Radial broadening of the boundary layer as the planet spins up reduces the specific angular momentum of accreted gas, allowing the planet to find a terminal rotation rate short of the breakup rate. In this work, we quantified the terminal rotation rate of planets accreting from their circumplanetary disks and identified its dependency on the disk's scale height.
+							</span>
+						</li>
+
+						<li>
+							<a href="Dong_NewHorizons.pdf" class="project"> Debris Disks in Multiplanet Systems</a>
+
+							<span class="code_paper">
+								<a href="https://ui.adsabs.harvard.edu/abs/2020ApJ...889...47D/abstract" class="paper_link_color">Dong, Dawson, Shannon, &amp; Morrison 2020, ApJ, 889, 47</a>
+							</span>
+							
+							<span class="project_description">
+								Resolved debris disk features, such as warps, offsets, edges and gaps, azimuthal asymmetries, radially thickened rings, and scale heights, hold valuable information about the underlying planetary systems. This information includes the predicted planet's mass, semimajor axis, and other orbital parameters. Most existing models assume that a single planet is sculpting the disk feature. However, recent observations of mature planetary systems (for example, by radial velocity surveys or through the Kepler mission) have revealed that many planets are part of multiplanet systems. This raises the question: are our inferences compromised by unseen planets? In our research, we investigated whether and how planet properties inferred from single-planet models might be compromised when multiple planets reside within the system.
+							</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- Teaching Tab Content -->
+			<div id="teaching" class="tab-content">
+				<div class="introduction">
+					<ul display:table-row;>
+						<li>
+							<a href="#" class="project">ASTR 405: Planetary Systems</a>
+							
+							<span class="project_description">
+								An upper-level course on the formation and evolution of planetary systems. Topics include exoplanet detection and characterization, planet formation, planetary atmospheres and interiors, and the physical interpretation of observational data, with an emphasis on quantitative analysis and research-driven learning. 
+								Offered in Fall 2025.
+								Course materials:
+								<a href="https://github.com/jiayindong/ASTR405" target="_blank" aria-label="Course materials GitHub">
+								<i data-feather="github"></i>
+								</a>
+							</span>
+							</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- Group Tab Content -->
+			<div id="group" class="tab-content">
+			<div class="introduction">
+
+				<p><strong>Graduate Students</strong></p>
+				<ul>
+				<li>Nicolas Mazziotti</li>
+				<li>Lucas Brefka (Penn State)</li>
+      			<li>Tyler Fairnington (UChicago)</li>
+				</ul>
+
+				<p><strong>Undergraduate Students</strong></p>
+				<ul>
+				<li>Zixuan (Jay) Yan</li>
+				<li>Yuxuan Yuan</li>
+				</ul>
+
+				<p><strong>Undergraduate Research Projects</strong></p>
+				<p><strong>Team Gaia (Fall 2025)</strong></p>
+				<p>
+				Team Gaia is a one semester undergraduate research project focused on building a Bayesian inference pipeline to infer planetary companion properties from Gaia RUWE measurements.
+				Codes:
+				<a href="https://github.com/jiayindong/tgaia" target="_blank" aria-label="Team Gaia GitHub">
+					<i data-feather="github"></i>
+				</a>
+				</p>
+				<p>
+				Team members: Tanay Agrawal, Johnny Cheng, Grace Houlihan, Naavya Jain, Noori Khurshid, Ashi Poorey, Tanmay Raswant, Zixuan (Jay) Yan
+				</p>
+			</div>
+			</div>
+
+
+	</div>
+	</div>
+
+	<div class="footer wrapper">
+		<nav class="nav">
+			<div style="font-size: 12px;"><a href="https://github.com/hadisinaee/avicenna">Avicenna Theme</a> | Built with <a href="https://gohugo.io">Hugo</a></div>
 		</nav>
 	</div>
 
-	<nav class="nav">
-		<ul class="flat">
-			
-		</ul>
-	</nav>
-</div>
-
-		<div class="introduction"><span>
-		Hi all! I am a professor of Astronomy at the University of Illinois Urbana-Champaign. Previously, I was a Flatiron Research Fellow at the Center for Computational Astrophysics, Flatiron Institute. My research combines computational (N-body and MHD), statistical (data-driven and Bayesian), and dynamical (modeling and observational) approaches to study the formation and evolution of planetary systems. I received my PhD in Astronomy &amp; Astrophysics from Penn State University, where I worked under the guidance of Bekki Dawson.
-		<div class="introduction">
-	
-	<h4>Highlighted Projects</h4>
-	<ul display:table-row;>
-
-		<li>
-			<a href="Dong_Gordon.pdf" class="project"> Stellar Obliquity Distribution of Hot Jupiters</a>
-
-			<span class="code_paper">
-				<a href="https://ui.adsabs.harvard.edu/abs/2023arXiv230514220D/abstract" class="paper_link_color">Dong &amp; Foreman-Mackey 2023, AJ, 166, 112</a>
-				
-			</span>
-			
-			<span class="project_description">
-				Stellar obliquity, the angle between a planet's orbital axis and its host star's spin axis, serves as a probe of a planetary system's formation and dynamical history. Different high-e migration scenarios for Hot Jupiters predict different stellar obliquity distributions. In this population study, we found that the misaligned Hot Jupiter population follows a nearly isotropic distribution. This suggests that planet-planet interactions could be the primary channel for the formation of Hot Jupiters. We also introduce this <a href="https://github.com/jiayindong/obliquity">population-level obliquity inference code</a> that models the spin-orbit angle distribution of exoplanetary systems using a hierarchical Bayesian framework.
-			</span>
-			
-
-		</li>
-
-
-		<li>
-			<a href="JiayinDong_DDA22.pdf" class="project"> Eccentricity Distribution of TESS Warm Jupiters </a>
-
-			
-			<span class="code_paper">
-								
-				<a href="https://ui.adsabs.harvard.edu/abs/2021arXiv210401970D/abstract" class="paper_link_color">Dong, Huang, Dawson et al. 2021, ApJS, 255, 6</a>
-				<br>
-				<a href="https://ui.adsabs.harvard.edu/abs/2021arXiv210903771D/abstract" class="paper_link_color">Dong, Huang, Zhou et al. 2021, ApJL, 920, L16</a>
-				<br>
-				
-			</span>
-			
-			
-			<span class="project_description">
-				The formation process of Warm Jupiters remains unclear. They may form in situ, undergo disk or high eccentricity tidal migration, or be formed through a combination of these channels. Each of these origin theories leads to different expectations for the eccentricities of Warm Jupiters. We have been systematically searching for Warm Jupiters in the TESS Full-Frame Images and conducting follow-up observations.
-
-				As a result of our research, we have introduced a catalog of Warm Jupiter candidates identified from the first year of TESS data. These Warm Jupiters have been validated and characterized based on their transit-timing variations and eccentricities. We have inferred their <a href="https://ui.adsabs.harvard.edu/abs/2021arXiv210401970D/abstract">eccentricity distribution</a> using hierarchical Bayesian modeling and found a broad and possibly bimodal eccentricity distribution of Warm Jupiters' orbits. This suggests Warm Jupiters, similar to Hot Jupiters, undergo planet-planet interactions.
-
-				Our survey led to the discovery of <a href="https://ui.adsabs.harvard.edu/abs/2021arXiv210903771D/abstract">TOI-3362b</a>, a Jupiter-like planet with the highest observed eccentricity among planets with orbital periods less than 20 days. It is likely undergoing high-eccentricity tidal migration.
-			</span>
-			
-
-		</li>
-
-		<li>
-			<a href="" class="project"> Rossiter-McLaughlin Measurements of Close-In Planets </a>
-
-			<span class="code_paper">
-				<a href="https://ui.adsabs.harvard.edu/abs/2023arXiv230516495D/abstract" class="paper_link_color">Dong, Wang, Rice et al. 2023, ApJL, 951, L29 </a>
-				<br>
-				<a href="https://ui.adsabs.harvard.edu/abs/2022arXiv220112836D/abstract" class="paper_link_color">Dong, Huang, Zhou et al. 2022, ApJL, 920, L7</a>
-				
-			</span>
-			
-			<span class="project_description">
-				Warm Jupiters are close-in giant planets with relatively large planet-star separations. Their stellar obliquities are less influenced by planet-star tidal interactions and, therefore, may serve as a probe of the planetary system's formation and dynamical history. However, the stellar obliquities of Warm Jupiters have not been extensively explored, particularly for those with highly elliptical orbits or those within young systems.
-
-				I have led the discovery and the Rossiter-McLaughlin effect measurements of two significant exoplanets. One of these is <a href="https://ui.adsabs.harvard.edu/abs/2022arXiv220112836D/abstract">TOI-1268b</a>, which is among the youngest known Warm Saturns. The other is <a href="https://ui.adsabs.harvard.edu/abs/2023arXiv230516495D/abstract">TOI-1859b</a>, a clear example of an eccentric and misaligned Warm giant planet and one of the first of its kind to be identified, in favor of planet-planet interaction origin.
-			</span>
-			
-
-		</li>
-		
-		<li>
-			<a href="Dong_DDA21_1slide.pdf" class="project"> Boundary Layer Circumplanetary Accretion</a>
-
-			
-			<span class="code_paper">
-				
-				<a href="https://ui.adsabs.harvard.edu/abs/2020arXiv201206641D/abstract" class="paper_link_color">Dong, Jiang, &amp; Armitage 2021, ApJ, 921, 54</a>
-				
-			</span>
-			
-
-			
-			<span class="project_description">
-				Gas giants are expected to accrete most of their mass via a circumplanetary disk. If the planet is unmagnetized and initially slowly rotating, it will accrete gas via a radially narrow boundary layer and rapidly spin up. Radial broadening of the boundary layer as the planet spins up reduces the specific angular momentum of accreted gas, allowing the planet to find a terminal rotation rate short of the breakup rate. In this work, we quantified the terminal rotation rate of planets accreting from their circumplanetary disks and identified its dependency on the disk's scale height.
-			</span>
-			
-
-		</li>
-		
-		<li>
-			<a href="Dong_NewHorizons.pdf" class="project"> Debris Disks in Multiplanet Systems</a>
-
-			
-			<span class="code_paper">
-				
-
-				
-				<a href="https://ui.adsabs.harvard.edu/abs/2020ApJ...889...47D/abstract" class="paper_link_color">Dong, Dawson, Shannon, &amp; Morrison 2020, ApJ, 889, 47</a>
-				
-			</span>
-			
-
-			
-			<span class="project_description">
-				Resolved debris disk features, such as warps, offsets, edges and gaps, azimuthal asymmetries, radially thickened rings, and scale heights, hold valuable information about the underlying planetary systems. This information includes the predicted planet's mass, semimajor axis, and other orbital parameters. Most existing models assume that a single planet is sculpting the disk feature. However, recent observations of mature planetary systems (for example, by radial velocity surveys or through the Kepler mission) have revealed that many planets are part of multiplanet systems. This raises the question: are our inferences compromised by unseen planets? In our research, we investigated whether and how planet properties inferred from single-planet models might be compromised when multiple planets reside within the system.
-			</span>
-			
-
-		</li>
-		</ul>
-	
-</div>
-
-			<div class="introduction">
-	</div>
-
-		</div>
-		</div>
-		<div class="footer wrapper">
-	<nav class="nav">
-		<div><a href="https://github.com/hadisinaee/avicenna">Avicenna Theme</a> | Built with <a href="https://gohugo.io">Hugo</a></div>
-	</nav>
-</div>
-
-
-<script type="application/javascript">
+	<script type="application/javascript">
 var doNotTrack = false;
 if (!doNotTrack) {
 	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
@@ -194,7 +227,27 @@ if (!doNotTrack) {
 <script>
 	feather.replace()
 
-</script>
-	</body>
+	// Tab switching functionality
+	function openTab(evt, tabName) {
+		console.log("openTab called with:", tabName);
+		// Hide all tab contents
+		var tabContents = document.getElementsByClassName("tab-content");
+		console.log("Found tab contents:", tabContents.length);
+		for (var i = 0; i < tabContents.length; i++) {
+			tabContents[i].classList.remove("active");
+			console.log("Removed active from tab", i);
+		}
 
-</html>
+		// Remove active class from all tab buttons
+		var tabButtons = document.getElementsByClassName("tab-button");
+		for (var i = 0; i < tabButtons.length; i++) {
+			tabButtons[i].classList.remove("active");
+		}
+
+		// Show the selected tab content and mark button as active
+		document.getElementById(tabName).classList.add("active");
+		evt.currentTarget.classList.add("active");
+		console.log("Activated tab:", tabName);
+	}
+		</script>
+	</body>

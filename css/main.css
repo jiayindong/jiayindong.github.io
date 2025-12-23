@@ -220,7 +220,7 @@ ul {
 .header h2 {
   margin: 0;
   padding: 0;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   line-height: 1.3em;
   font-weight: 300;
 }
@@ -259,17 +259,18 @@ ul {
 
 .header .site-affilation .email {
   /* color: #a00; */
-  font-size: 0.88rem;
+  font-size: 1rem;
   display: block;
   font-family: "Lato";
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .header .site-affilation .position {
   /* color: #a00; */
-  /* font-size: 14px; */
+  font-size: 1rem;
   /* display: block; */
   font-family: Lato;
+  font-weight: 300;
   /* font-weight: bolder; */
 }
 
@@ -404,6 +405,15 @@ ul {
   margin-top: 40px;
 }
 
+.footer nav div {
+  font-size: inherit;
+}
+
+.footer nav div,
+.footer nav div a {
+  font-size: inherit;
+}
+
 .page-title {
   margin-bottom: 0;
 }
@@ -445,5 +455,75 @@ ul {
 @media (max-width: 480px) {
   body {
     font-size: 14px;
+  }
+}
+
+/* Reduce spacing for Team Gaia section */
+#group .introduction {
+  margin-top: 15px;
+}
+
+#group .introduction p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+#group .introduction a svg {
+  width: 15px;
+  height: 15px;
+}
+
+#teaching .project_description a svg {
+  width: 15px;
+  height: 15px;
+}
+
+/* Tab Styles */
+.tabs {
+  display: flex;
+  border-bottom: none;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.tab-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 8px 10px;
+  font-size: 15px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: #666;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+  margin-bottom: 0px;
+}
+
+.tab-button:hover {
+  color: #5470C4;
+}
+
+.tab-button.active {
+  color: #5470C4;
+  border-bottom: 3px solid #5470C4;
+}
+
+.tab-content {
+  display: none !important;
+  animation: fadeIn 0.5s;
+}
+
+.tab-content.active {
+  display: block !important;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
